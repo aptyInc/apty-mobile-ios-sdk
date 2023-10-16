@@ -26,12 +26,13 @@ To integrate the Apty Mobile Studio SDK using Cocoapods, add the following line 
 
 ```ruby
 pod 'AptyMobileStudioSDK'
-```ruby
+```
 
 Then, run the following command:
+
 ```ruby
 pod install
-```ruby
+```
 
 ### Swift Package Manager (SPM)
 
