@@ -37,7 +37,7 @@ pod install
 ### Swift Package Manager (SPM)
 
 In Xcode, select File > Swift Packages > Add Package Dependency...
-Enter the repository URL: https://github.com/aptyInc/apty-mobile-ios-sdk.git
+Enter the repository URL: https://github.com/aptyInc/apty-mobile-studio-ios-sdk-publisher
 Choose the version range that suits your project.
 
 ## License
