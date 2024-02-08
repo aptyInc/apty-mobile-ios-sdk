@@ -3,9 +3,9 @@
 
 import PackageDescription
 
-let version = "0.2.0"
+let version = "0.2.1"
 let moduleName = "AptyStudio"
-let checksum = "d70af35d15d48a898ca6905e0e6d3b252606cc6ed2ba8a7570bd86bd64550367"
+let checksum = "69902c252086436f4f63205495c6695df9abd01f77b61696c63f6155126c45fe"
 let url = "https://github.com/aptyInc/apty-mobile-studio-ios-sdk-publisher/blob/main/AptyStudio-\(version).xcframework.zip"
 
 let package = Package(
