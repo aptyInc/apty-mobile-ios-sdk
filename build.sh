@@ -11,7 +11,7 @@ NEW_VERSION=$1
 
 # 2. Calculate checksum and store it
 echo "Calculate new checksum"
-NEW_CHECKSUM=$(swift package compute-checksum AptyClient-$NEW_VERSION.xcframework.zip)
+NEW_CHECKSUM=$(swift package compute-checksum AptyStudio-$NEW_VERSION.xcframework.zip)
 echo "print out new shasum for convenience reasons"
 echo "New checksum is $NEW_CHECKSUM"
 
@@ -27,14 +27,14 @@ cat Package.swift
 
 # 5. Commit all data without the XCfrmework
 echo "git commit all without framework and push"
-git add --all -- :!Client-SPM.xcframework.zip
-git commit -m "New AptyClient version $NEW_VERSION"
+git add --all -- :!AptyStudio-$NEW_VERSION.xcframework.zip
+git commit -m "New AptyStudio version $NEW_VERSION"
 git push
 
 # 6. Pusblish a new release with the same version of the repository A, and attach XCFramework in the Release metadata
 echo "Releasing the new version"
-gh release create "$NEW_VERSION" --generate-notes "./AptyClient-$NEW_VERSION.xcframework.zip"
+gh release create "$NEW_VERSION" --generate-notes "./AptyStudio-$NEW_VERSION.xcframework.zip"
 
 # 7. Remove zip of XCFramework
 echo "delete downloaded zip file"
-rm -rf AptyClient-$NEW_VERSION.xcframework.zip
+rm -rf AptyStudio-$NEW_VERSION.xcframework.zip

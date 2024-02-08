@@ -3,10 +3,10 @@
 
 import PackageDescription
 
-let version = "0.1.9"
-let moduleName = "AptyClient"
-let checksum = "6727e411510f1e0ce51bfb4fe9247ac1185138af8d014e894d1b86bca403b79a"
-let url = "https://github.com/aptyInc/apty-mobile-studio-ios-sdk-publisher/blob/main/AptyClient-\(version).xcframework.zip"
+let version = "0.2.0"
+let moduleName = "AptyStudio"
+let checksum = "d70af35d15d48a898ca6905e0e6d3b252606cc6ed2ba8a7570bd86bd64550367"
+let url = "https://github.com/aptyInc/apty-mobile-studio-ios-sdk-publisher/blob/main/AptyStudio-\(version).xcframework.zip"
 
 let package = Package(
     name: moduleName,
